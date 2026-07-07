@@ -27,4 +27,8 @@ class Item:
     
     @staticmethod
     def from_dict(data):
-        t = Item()
+        return Item (
+            data["name"],
+            data("amount"),
+            data("rarity")
+        )
