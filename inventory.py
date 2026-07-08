@@ -29,6 +29,6 @@ class Item:
     def from_dict(data):
         return Item (
             data["name"],
-            data("amount"),
-            data("rarity")
+            data["amount"],
+            data["rarity"]
         )

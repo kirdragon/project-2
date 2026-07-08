@@ -36,17 +36,17 @@ class InventoryManager:
             
             if choice == 1:
                 name = input("Новое имя: ")
-                Item.change_name(name)
+                item.change_name(name)
             elif choice == 2:
                 amount = int(input("Новое количество: "))
-                Item.change_amount(amount)
+                item.change_amount(amount)
             elif choice == 3:
                 rarity = input("Новая редкость: ")
-                Item.change_rarity(rarity)
+                item.change_rarity(rarity)
             elif choice == 4:
                 name = input("Новое имя: ")
                 amount = input("Новое количество: ")
                 rarity = input("Новая редкость: ")
-                Item.change_all(name, amount, rarity)
+                item.change_all(name, amount, rarity)
             elif choice == 5:
-                return 
+                return  
