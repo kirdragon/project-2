@@ -31,4 +31,22 @@ class InventoryManager:
         return self.items
     
     def change(self,index, choice):
-        if 0<=index < len(self.items)
+        if 0<=index < len(self.items):
+            item = self.items[index]
+            
+            if choice == 1:
+                name = input("Новое имя: ")
+                Item.change_name(name)
+            elif choice == 2:
+                amount = int(input("Новое количество: "))
+                Item.change_amount(amount)
+            elif choice == 3:
+                rarity = input("Новая редкость: ")
+                Item.change_rarity(rarity)
+            elif choice == 4:
+                name = input("Новое имя: ")
+                amount = input("Новое количество: ")
+                rarity = input("Новая редкость: ")
+                Item.change_all(name, amount, rarity)
+            elif choice == 5:
+                return 
